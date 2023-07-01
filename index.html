@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Login Page</title>
+<!--styles -->
+<style>
+body{
+	background-image:url("https://media.gettyimages.com/photos/bus-picture-id136521748?s=612x612");
+	background-position:50% 50%;
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+</style>
+<script src="check.js"></script>
+</head>
+</html>
+<body>
+<form name="reg" method="get" action="/ticket/dbaccess/validate.php">
+<table width="20%" bgcolor="0099CC" align="bottom">
+
+<tr>
+<td colspan=2><center><font size=4><b>Online Bus Ticket Login</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="user"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pass"></td>
+</tr>
+
+<tr>
+<td> Role:</td>
+<td><input type="hidden" size=25  name="role">
+ <select name="--select--" size=default  form="loginform">
+  <option value="user">user</option>
+  <option value="admin">admin</option>
+</select></td>
+</tr>
+<tr>
+<td ><input type= "hidden" > 
+<a href="register.html">register</a>	
+</td>
+<td><input type="submit"  value="Login" onclick="validate()"></td>
+</tr>
+
+</table>
+
+</form>
+
+
+</body>
+</html>
